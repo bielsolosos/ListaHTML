@@ -1,0 +1,17 @@
+body{
+    background-color: green;
+    font: normal 15pt Arial;
+}
+header{
+    color: aliceblue;
+    text-align: left;
+}
+main{
+    background-color: aliceblue;
+    border-radius: 10pt;
+    padding: 10px;
+    text-align: left;
+    max-width: 450px;
+    max-height: 200px;
+    
+}
