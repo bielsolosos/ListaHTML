@@ -1,0 +1,86 @@
+body{
+    height: 100vh;
+    padding: 10px;
+}
+
+header{
+    display: flex;
+    background-color: aquamarine;
+    height: calc(100vh - 70vh);
+    margin: 20px 20px 0px 20px;
+}
+
+.blocao{
+    display: flex;
+}
+
+.blocoEsquerda{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: calc(100vh - 30vh);
+    max-width: 30vh;
+    margin: 20px;
+}
+
+.b1{
+    display: flex;
+    flex: 2;
+    background-color: gray;
+    margin: 0px 0px 7px 0px;
+}
+
+.b2{
+    display: flex;
+    flex: 2;
+    background-color: aqua;
+    max-height: 30vh;
+    margin: 20px 0px 0px 0px;
+}
+
+
+.blocoMeio{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    height: calc(100vh - 30vh);
+    margin: 20px 0px 20px 0px;
+}
+
+.b3{
+    flex: 1;
+    background-color: pink;
+}
+
+.b4{
+    flex: 1;
+    background-color: aqua;
+    max-height: 20vh;
+    margin: 20px 0px 0px 0px;
+
+}
+
+.blocoDireita{
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+
+    height: calc(100vh - 30vh);
+    max-width: 30vh;
+    margin: 20px;
+}
+
+.b6{
+    display: flex;
+    flex: 2;
+    background-color: gray;
+    margin: 0px 0px 0px 0px;
+}
+
+.b5{
+    display: flex;
+    flex: 2;
+    background-color: aqua;
+    max-height: 20vh;
+    margin: 0px 0px 20px 0px;
+}
