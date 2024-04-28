@@ -1,0 +1,31 @@
+body{
+    height: 100vh;
+    padding: 10px;
+}
+
+.bloco{
+    display: flex;
+    height: calc(100vh - 20vh);
+}
+
+.b1{
+    flex: 1;
+    background-color: pink;
+    max-width: 150vh;
+    margin: 20px;
+
+}
+.b2{
+    flex: 1;
+    background-color: aqua;
+    max-width: 50vh;
+    margin: 20px;
+
+}
+
+.bloco2{
+    display: flex;
+    height: 10vh;
+    background-color: aqua;
+    margin: 20px;
+}
