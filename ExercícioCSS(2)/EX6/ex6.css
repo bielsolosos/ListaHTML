@@ -1,0 +1,24 @@
+.bloco1 {
+    display: flex;
+    width: 1500px;
+    height: 20px;
+   border: 10px;
+    background-color: aqua;
+
+}
+.quadrado {
+  
+    height: 500px;
+    width: 500px;
+    background-color: black;
+    margin: 10px 10px 10px 10px;
+    float: left;
+    align-items: center;
+}
+.quadrado2 {
+height: 500px;
+width: 500px;
+background-color: black;
+margin: 10px 10px 10px 10px;
+align-items: center;
+}
