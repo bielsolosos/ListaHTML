@@ -112,3 +112,16 @@ main{
 .row {
     height: calc(100vh - 60vh); 
 }
+main{
+    padding: 10vh;
+}
+
+.card{
+    box-shadow: 1px 1px 0px 1px  #555050;
+
+}
+.card:hover{
+    box-shadow: 2px 2px 0px 2px  #555050;
+    transform: translateY(-5px);
+    transition: all 0.2s;
+}

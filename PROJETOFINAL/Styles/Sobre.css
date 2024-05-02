@@ -13,22 +13,29 @@ body{ /*tipo de texto*/
     margin-right: auto;
 }
 .navbar{ /*config barra de navegação*/
-    background-color: #2c2c2c;
+    background-color: black;
     padding: 1rem;
-    position: sticky; 
-    top: 0;
-    box-shadow: 10px 0px 10px #2c2c2c;
+    position: sticky;
+    height: calc(100vh - 90vh);
+    top: 0%;
+    box-shadow: 15px 8px 8px #2c2c2c;
     z-index: 99;
 }
 .navbar>div{ /*config das posições dos itens na barra de navegação*/
     display: flex;
     align-items: center;
     justify-content: space-between;
+    
 
-} 
-.logo{ /*cor do texto da marca, está em azul*/
-    color: #0084ff;
 }
+.logo {
+    position: fixed; /* Fixa a logo na tela */
+    top: 0%; /* Posiciona a logo no topo */
+    left: 0%; /* Posiciona a logo no lado esquerdo */
+    padding: 1%; /* Adiciona algum espaço ao redor da logo */
+    color: #0084ff; /* Cor do texto da marca */
+    z-index: 1000; /* Garante que a logo fique acima de outros elementos */
+} 
 .logo span{  /*cor do texto da marca, está em branco*/
     color: #fff;
 }
@@ -40,10 +47,17 @@ nav ul{  /*config do menu(home,produto e etc)*/
 .nav-icon-container{  /*config */
     display: flex;
     align-items: center;
+    position: fixed; /* Fixa a logo na tela */
+    top: 0%; /* Posiciona a logo no topo */
+    right: 0%; /* Posiciona a logo no lado esquerdo */
+    padding: 1%; /* Adiciona algum espaço ao redor da logo */
+    z-index: 1000; /* Garante que a logo fique acima de outros elementos */
 }
 .nav-icon-container img{ /*config das imagens pequenas(icones)*/
-    width: 30px;
+    width: 70px;
     cursor: pointer;
+    object-position: right;
+    
 }
 .nav-icon-container img:first-child{
     margin-right: 1rem;
@@ -66,13 +80,16 @@ header{
     text-align: center;
     align-items: center;
     justify-self: 1rem;
-    padding: 1rem;
+    padding: 1rem;    
+}
+.text{
+
 }
 img {
-    max-width: 60%; /* Garante que a imagem não ultrapasse o tamanho do seu contêiner */
-    height: 100; /* Mantém a proporção da imagem */
+    max-width: 30%; /* Garante que a imagem não ultrapasse o tamanho do seu contêiner */
+    height: 50; /* Mantém a proporção da imagem */
     display: block; /* Remove espaços extras abaixo da imagem */
-    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    margin: auto; /* Centraliza a imagem horizontalmente */
 }
 
 p {
@@ -83,3 +100,4 @@ a{
     text-decoration: none;
     color: inherit;
 }
+
