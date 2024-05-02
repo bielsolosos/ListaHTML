@@ -5,7 +5,7 @@
 }
 body{ /*tipo de texto*/
     font-family: 'arial';
-
+    
 }
 .header-inner-content{ /*tipo de texto*/
     max-width: 100%;
@@ -16,7 +16,7 @@ body{ /*tipo de texto*/
     background-color: black;
     padding: 1rem;
     position: sticky;
-    height: calc(100vh - 90vh);
+    height: calc(100vh - 85vh);
     top: 0%;
     box-shadow: 15px 8px 8px #2c2c2c;
     z-index: 99;
@@ -29,12 +29,11 @@ body{ /*tipo de texto*/
 
 }
 .logo {
-    position: fixed; /* Fixa a logo na tela */
+    position: absolute; /* Fixa a logo na tela */
     top: 0%; /* Posiciona a logo no topo */
     left: 0%; /* Posiciona a logo no lado esquerdo */
-    padding: 1%; /* Adiciona algum espaço ao redor da logo */
+    padding: 20px 30px 30px 30px; /* Adiciona algum espaço ao redor da logo */
     color: #0084ff; /* Cor do texto da marca */
-    z-index: 1000; /* Garante que a logo fique acima de outros elementos */
 } 
 .logo span{  /*cor do texto da marca, está em branco*/
     color: #fff;
@@ -47,7 +46,7 @@ nav ul{  /*config do menu(home,produto e etc)*/
 .nav-icon-container{  /*config */
     display: flex;
     align-items: center;
-    position: fixed; /* Fixa a logo na tela */
+    position: absolute; /* Fixa a logo na tela */
     top: 0%; /* Posiciona a logo no topo */
     right: 0%; /* Posiciona a logo no lado esquerdo */
     padding: 1%; /* Adiciona algum espaço ao redor da logo */
@@ -82,9 +81,7 @@ header{
     justify-self: 1rem;
     padding: 1rem;    
 }
-.text{
 
-}
 img {
     max-width: 30%; /* Garante que a imagem não ultrapasse o tamanho do seu contêiner */
     height: 50; /* Mantém a proporção da imagem */
@@ -138,4 +135,8 @@ main{
     box-shadow: 2px 2px 0px 2px  #555050;
     transform: translateY(-5px);
     transition: all 0.2s;
+}
+
+nav{
+    padding: 40px 10px 10px 10px;
 }
