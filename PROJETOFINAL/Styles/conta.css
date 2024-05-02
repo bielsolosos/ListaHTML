@@ -83,15 +83,16 @@ a{
     color: inherit;
 }
 main{
-    justify-self: center;
-    height: 92.8vh;
+    height: 90vh;
     display: flex;
     justify-content:center;
     align-items:center;
 }
 .logcontainer{
-    height: 100%;
-    width: 100%;
+    height: 500px;
+    width: 800px;
+    border-radius: 12px;
+    box-shadow: 0 5px 20px #a0a0a0;
 }
 .formcontainer{
     height: 100%;
@@ -105,13 +106,7 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    padding: 110px 0;
-}
-.form-login{
-    background-color: aqua;
-}
-.form-register{
-    background-color: crimson;
+    padding: 55px 0;
 }
 .title{
     font-size: 3rem;
@@ -123,6 +118,7 @@ main{
     --secundary-color : #fff;
     --text-color-dark: #2c2c2c;
     --text-color-light: #fff;
+    --icon-color: #d4c1c1;
 }
 #customBtn {
     display: flex;
@@ -159,4 +155,33 @@ main{
     font-size: 1rem;
     font-weight: bold;
     font-family: 'Roboto', sans-serif;
+  }
+  .inputcontainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  input{
+    width: 290px;
+    height: 40px;
+    padding: 10px 20px;
+    border-style: var(--icon-color);
+    border-radius: 3px;
+  }
+  .button{
+    border-style: none;
+    width: 140px;
+    height: 40px;
+    border: 2px solid var(--primary-color);
+    border-radius: 50px;
+    background-color: transparent;
+    font-size: 1rem;
+    font-weight: 600;
+    color: var(--primary-color);
+    cursor: pointer;
+  }
+  .button:hover{
+    background-color:var(--primary-color) ;
+    color: var(--secundary-color);
+    transition: 0.7s;
   }
