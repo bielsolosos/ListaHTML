@@ -1,10 +1,11 @@
 <!DOCTYPE html>
-<html long="en">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://kit.fontawesome.com/7c4d0fea60.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Styles/conta.css">
     <title>shopcomputers</title>
 </head>
@@ -29,18 +30,54 @@
             </div>
         </div>
     </div>
-    <div class="page">
-        <form method="POST" class="formLogin">
-            <h1>Login</h1>
-            <p>Digite os seus dados de acesso no campo abaixo.</p>
-            <label for="email">E-mail</label>
-            <input type="email" placeholder="Digite seu e-mail" autofocus="true" />
-            <label for="password">Senha</label>
-            <input type="password" placeholder="Digite seu e-mail" />
-            <a href="/">Esqueci minha senha</a>
-            <input type="submit" value="Acessar" class="btn" />
-        </form>
-    </div>
+    <main>
+        <div class="logcontainer">
+            <div class="formcontainer">
+                <form class="form form-login">
+                    <h1 class="title">Entrar Com</h1>
+                        <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+                        <script src="https://apis.google.com/js/api:client.js"></script>
+                        <script>
+                        var googleUser = {};
+                        var startApp = function() {
+                          gapi.load('auth2', function(){
+                            auth2 = gapi.auth2.init({
+                              client_id: 'YOUR_CLIENT_ID.apps.googleusercontent.com',
+                              cookiepolicy: 'single_host_origin',
+                            });
+                            attachSignin(document.getElementById('customBtn'));
+                          });
+                        };
+                        function attachSignin(element) {
+                          console.log(element.id);
+                          auth2.attachClickHandler(element, {},
+                              function(googleUser) {
+                                document.getElementById('name').innerText = "Signed in: " +
+                                    googleUser.getBasicProfile().getName();
+                              }, function(error) {
+                                alert(JSON.stringify(error, undefined, 2));
+                              });
+                        }
+                        </script>
+                        <div id="gSignInWrapper">
+                          <div id="customBtn" class="customGPlusSignIn">
+                            <span class="icon"><i class="fa-brands fa-google"></i></span>
+                            <span class="buttonText">Entrar com Google</span>
+                        </div>
+                        <div id="name"></div>
+                        <script>startApp();</script>
+                    </div>
+                    <p class="text">ou utilize sua conta</p>
+                    <div class="imputs"></div>
+                        <input type="email" placeholder="Digite seu email">
+                        <input type="password" placeholder="Digite sua senha">
+                    <a href="" class="link">Esqueceu a senha?</a>
+                    <button class="button">Entrar</button>
+                </form>
+                <form class="form form-register"></form>
+            </div>
+        </div>
+    </main>
 </body>
 
 </html>
