@@ -3,6 +3,9 @@
     padding: 0;
     margin: 0;
 }
+span{
+    color: #0084ff;;
+}
 body{ /*tipo de texto*/
     font-family: 'arial';
 
@@ -12,12 +15,20 @@ body{ /*tipo de texto*/
     margin-left: auto;
     margin-right: auto;
 }
-.navbar{ /*config barra de navegação*/
+body > nav > div > a > span{
+    color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: aliceblue;
+}
+.container-fluid{ /*config barra de navegação*/
     background-color: black;
     padding: 1rem;
     position: sticky;
-    height: calc(100vh - 90vh);
+    height: 5%;
     top: 0%;
+    width: 100%;
     box-shadow: 15px 8px 8px #2c2c2c;
     z-index: 99;
 }
@@ -25,19 +36,6 @@ body{ /*tipo de texto*/
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-
-}
-.logo {
-    position: fixed; /* Fixa a logo na tela */
-    top: 0%; /* Posiciona a logo no topo */
-    left: 0%; /* Posiciona a logo no lado esquerdo */
-    padding: 1%; /* Adiciona algum espaço ao redor da logo */
-    color: #0084ff; /* Cor do texto da marca */
-    z-index: 1000; /* Garante que a logo fique acima de outros elementos */
-} 
-.logo span{  /*cor do texto da marca, está em branco*/
-    color: #fff;
 }
 nav ul{  /*config do menu(home,produto e etc)*/
     display: flex;
@@ -52,6 +50,9 @@ nav ul{  /*config do menu(home,produto e etc)*/
     right: 0%; /* Posiciona a logo no lado esquerdo */
     padding: 1%; /* Adiciona algum espaço ao redor da logo */
     z-index: 1000; /* Garante que a logo fique acima de outros elementos */
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+    background-color: white;
 }
 .nav-icon-container img{ /*config das imagens pequenas(icones)*/
     width: 70px;
@@ -99,29 +100,4 @@ p {
 a{
     text-decoration: none;
     color: inherit;
-}
-
-
-main{
-    padding: 25vh;
-}
-.container{
-    height: calc(100vh - 65vh);
-
-}
-.row {
-    height: calc(100vh - 60vh); 
-}
-main{
-    padding: 10vh;
-}
-
-.card{
-    box-shadow: 1px 1px 0px 1px  #555050;
-
-}
-.card:hover{
-    box-shadow: 2px 2px 0px 2px  #555050;
-    transform: translateY(-5px);
-    transition: all 0.2s;
 }
