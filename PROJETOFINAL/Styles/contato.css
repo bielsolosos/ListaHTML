@@ -104,7 +104,7 @@ a{
 .error {
     color: red;
 }
-.thanks {
+#thanks {
     display: none;
     position: fixed;
     top: 50%;
@@ -113,27 +113,5 @@ a{
     background-color: #f0f0f0;
     padding: 20px;
     border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-.difficulties {
-    overflow-y: auto;
-    max-height: 150px;
-}
-.difficulty-option {
-    display: block;
-    padding: 5px 10px;
-    margin: 5px;
-    background-color: #007bff; /* Fundo azul */
-    border-radius: 5px;
-    cursor: pointer;
-}
-.difficulty-option.selected {
-    background-color: #a0a0a0; /* Fundo cinza  */
-}
-footer{
-    background-color: black;
-    color: whitesmoke;
-    height: 10%;
-    width: 100%;
-    justify-content: space-around;
+    box-shadow: 0 0 10px rgba(160, 138, 138, 0.678);
 }
