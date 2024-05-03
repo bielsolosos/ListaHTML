@@ -169,13 +169,12 @@ footer{
     width: 100%;
     justify-content: space-around;
 }
-
 /*.logo {
     position: fixed; /* Fixa a logo na tela */
   /*  top: 0%; /* Posiciona a logo no topo */
     /* left: 0%; /* Posiciona a logo no lado esquerdo */
     /* padding: 1%; /* Adiciona algum espaço ao redor da logo */
-    /* color: #0084ff; /* Cor do texto da marca */
+    /* color: red; /* Cor do texto da marca */
    /*  z-index: 1000; /* Garante que a logo fique acima de outros elementos */
 /*} 
 .logo span{  /*cor do texto da marca, está em branco*/
