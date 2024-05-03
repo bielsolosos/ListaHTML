@@ -4,7 +4,7 @@
   margin: 0;
 }
 span{
-  color: #0084ff;;
+  color: red;;
 }
 body{ /*tipo de texto*/
   font-family: 'arial';
@@ -121,11 +121,11 @@ main{
     display: flex;
 }
 #logar{
-  background-color: #0084ff;
+  background-color: red;
 }
 
 #cadastrar{
-  background-color: #0084ff;
+  background-color: red;
 }
 .form{
     height: 100%;
@@ -142,7 +142,7 @@ main{
     font-weight: 400;
 }
 :root{
-    --primary-color : #0084ff;
+    --primary-color : RED;
     --secundary-color : #fff;
     --text-color-dark: #2c2c2c;
     --text-color-light: #fff;
