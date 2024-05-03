@@ -12,12 +12,20 @@ body{ /*tipo de texto*/
     margin-left: auto;
     margin-right: auto;
 }
-.navbar{ /*config barra de navegação*/
+body > nav > div > a > span{
+    color: white;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link {
+    color: aliceblue;
+}
+.container-fluid{ /*config barra de navegação*/
     background-color: black;
     padding: 1rem;
     position: sticky;
-    height: calc(100vh - 90vh);
+    height: 5%;
     top: 0%;
+    width: 100%;
     box-shadow: 15px 8px 8px #2c2c2c;
     z-index: 99;
 }
@@ -25,19 +33,6 @@ body{ /*tipo de texto*/
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
-
-}
-.logo {
-    position: fixed; /* Fixa a logo na tela */
-    top: 0%; /* Posiciona a logo no topo */
-    left: 0%; /* Posiciona a logo no lado esquerdo */
-    padding: 1%; /* Adiciona algum espaço ao redor da logo */
-    color: #0084ff; /* Cor do texto da marca */
-    z-index: 1000; /* Garante que a logo fique acima de outros elementos */
-} 
-.logo span{  /*cor do texto da marca, está em branco*/
-    color: #fff;
 }
 nav ul{  /*config do menu(home,produto e etc)*/
     display: flex;
@@ -52,6 +47,9 @@ nav ul{  /*config do menu(home,produto e etc)*/
     right: 0%; /* Posiciona a logo no lado esquerdo */
     padding: 1%; /* Adiciona algum espaço ao redor da logo */
     z-index: 1000; /* Garante que a logo fique acima de outros elementos */
+}
+[type=button]:not(:disabled), [type=reset]:not(:disabled), [type=submit]:not(:disabled), button:not(:disabled){
+    background-color: white;
 }
 .nav-icon-container img{ /*config das imagens pequenas(icones)*/
     width: 70px;
@@ -100,28 +98,91 @@ a{
     text-decoration: none;
     color: inherit;
 }
-
-
 main{
     padding: 25vh;
 }
-.container{
-    height: calc(100vh - 65vh);
-
+.containerpy-5{
+    height: 15%;
+    
+}
+.ads > div.carousel-indicators > button.active{
+    background-color: #2c2c2c;
+}
+.containerpy-5 img{
+    overflow: hidden;
+    max-width: 40%; /* Garante que a imagem não ultrapasse o tamanho do seu contêiner */
+    height: 90%; /* Mantém a proporção da imagem */
+    display: block; /* Remove espaços extras abaixo da imagem */
+    margin: auto; /* Centraliza a imagem horizontalmente */
+}
+#ads > div.carousel-indicators > button.active{
+    background-color: black;
 }
 .row {
-    height: calc(100vh - 60vh); 
+    height: 80%; 
+    width: 100%;
+    align-items: center;
 }
 main{
-    padding: 10vh;
+    height: 40%; 
+    padding: 5vh;
+    align-items: center;
 }
 
 .card{
     box-shadow: 1px 1px 0px 1px  #555050;
+    align-items: center;
 
 }
 .card:hover{
     box-shadow: 2px 2px 0px 2px  #555050;
     transform: translateY(-5px);
     transition: all 0.2s;
+    align-items: center;
 }
+footer{
+    background-color: black;
+    color: whitesmoke;
+    height: 10%;
+    width: 100%;
+}
+/*.logo {
+    position: fixed; /* Fixa a logo na tela */
+  /*  top: 0%; /* Posiciona a logo no topo */
+    /* left: 0%; /* Posiciona a logo no lado esquerdo */
+    /* padding: 1%; /* Adiciona algum espaço ao redor da logo */
+    /* color: #0084ff; /* Cor do texto da marca */
+   /*  z-index: 1000; /* Garante que a logo fique acima de outros elementos */
+/*} 
+.logo span{  /*cor do texto da marca, está em branco*/
+   /* color: #fff;
+}*/
+/* @media screen and (max-width: 800px) {
+    .div.navbar {
+        width: 100%;
+        align-items: center;
+    }
+}
+@media screen and (max-width: 870px) {
+    .nav-icon-container img {
+        display: none; 
+    }
+}
+@media screen and (max-width: 800px) {
+    .nav {
+        width: 100%; 
+        align-items: center;
+       
+    }
+}
+@media screen and (max-width: 870px) {
+    .logo {
+        display: none; 
+    }
+}
+@media screen and (max-width: 800px) {
+    .div.navbar {
+        width: 100%; 
+        align-items: center;
+    }
+} */
