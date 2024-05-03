@@ -1,4 +1,3 @@
-'use strict'
 
 const loginContainer = document.getElementById('logcontainer')
 
@@ -9,3 +8,6 @@ document.getElementById('logar').addEventListener('click', moveOverlay)
 document.getElementById('open-register-mobile').addEventListener('click', moveOverlay)
 document.getElementById('open-login-mobile').addEventListener('click', moveOverlay)
 
+function perfil(){
+    window.location = "Perfil.html"
+}
