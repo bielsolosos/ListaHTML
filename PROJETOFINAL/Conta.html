@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="https://kit.fontawesome.com/7c4d0fea60.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="Styles/conta.css">
+    <script src="./js/login.js" defer></script>
     <title>shopcomputers</title>
 </head>
 
@@ -31,7 +32,7 @@
         </div>
     </div>
     <main>
-        <div class="logcontainer">
+        <div class="logcontainer" id="logcontainer">
             <div class="formcontainer">
                 <form class="form form-login">
                     <h2 class="title">Entrar</h2>
@@ -72,7 +73,11 @@
                         <input type="email" placeholder="Digite seu email">
                         <input type="password" placeholder="Digite sua senha">
                     <a href="" class="link">Esqueceu a senha?</a>
-                    <button class="button">Entrar</button>
+                    <button type="button" class="button">Entrar</button>
+                    <p class="mobile-text">
+                        Não tem conta?
+                        <a href="#" id="open-register-mobile">Registre-se</a>
+                    </p>
                 </form>
                 <form class="form form-register">
                     <h2 class="title">Criar Conta</h2>
@@ -114,11 +119,26 @@
                         <input type="email" placeholder="Digite seu email">
                         <input type="password" placeholder="Digite sua senha">
                     <a href="" class="link">Esqueceu a senha?</a>
-                    <button class="button">Cadastrar</button>
+                    <button type="button" class="button">Cadastrar</button>
+                    <p class="mobile-text">
+                        Já tem conta?
+                        <a href="#" id="open-login-mobile">Login</a>
+                    </p>
                 </form>
+            <div class="overlay">
+                <div class="overlaytext">
+                    <h2 class="title title-light">Já tem conta?</h2>
+                    <p class="text formtext-light">Faça o login com suas informações para acessar a nossa loja</p>
+                    <button class="button button-light" id="logar">Logar</button>
+                </div>
+                <div class="overlaytext">
+                    <h2 class="title title-light">Bem Vindo!</h2>
+                    <p class="text formtext-light">Cadastre-se e conheça os produtos e nossa loja</p>
+                    <button class="button button-light" id="cadastrar">Cadastre-se</button>
+                    </div>
+                </div>
             </div>
         </div>
     </main>
 </body>
-
 </html>
