@@ -127,3 +127,10 @@ p {
 #A{
   text-align: center ;
 }
+footer{
+    background-color: black;
+    color: whitesmoke;
+    height: 10%;
+    width: 100%;
+    justify-content: space-around;
+}

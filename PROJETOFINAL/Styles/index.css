@@ -167,7 +167,9 @@ footer{
     color: whitesmoke;
     height: 10%;
     width: 100%;
+    justify-content: space-around;
 }
+
 /*.logo {
     position: fixed; /* Fixa a logo na tela */
   /*  top: 0%; /* Posiciona a logo no topo */

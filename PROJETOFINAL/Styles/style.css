@@ -86,3 +86,10 @@ a{
     text-decoration: none;
     color: inherit;
 }
+footer{
+    background-color: black;
+    color: whitesmoke;
+    height: 10%;
+    width: 100%;
+    justify-content: space-around;
+}
