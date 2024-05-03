@@ -58,7 +58,6 @@ nav ul{  /*config do menu(home,produto e etc)*/
     width: 70px;
     cursor: pointer;
     object-position: right;
-    
 }
 .nav-icon-container img:first-child{
     margin-right: 1rem;
@@ -100,4 +99,34 @@ p {
 a{
     text-decoration: none;
     color: inherit;
+}
+
+.error {
+    color: red;
+}
+.thanks {
+    display: none;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #f0f0f0;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.difficulties {
+    overflow-y: auto;
+    max-height: 150px;
+}
+.difficulty-option {
+    display: block;
+    padding: 5px 10px;
+    margin: 5px;
+    background-color: #007bff; /* Fundo azul */
+    border-radius: 5px;
+    cursor: pointer;
+}
+.difficulty-option.selected {
+    background-color: #a0a0a0; /* Fundo cinza  */
 }
